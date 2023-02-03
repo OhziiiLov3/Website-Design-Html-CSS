@@ -7,4 +7,64 @@
 .banner{
     width: 100%;
     height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0, 0, 0, .2)),url(design-background.jpg);
+    background-size: cover;
+    background-position: center;
 }
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after{
+   content: "";
+   height: 3px; 
+   width: 0;
+   background: #ccd5ae;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: .05s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fefae0;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
